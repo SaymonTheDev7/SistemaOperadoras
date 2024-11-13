@@ -9,6 +9,10 @@ public class ServicoAdicional {
         this.descricao = descricao;
         this.custo_mensal = custo_mensal;
     }
+    public ServicoAdicional( String descricao, double custo_mensal) {
+        this.descricao = descricao;
+        this.custo_mensal = custo_mensal;
+    }
 
     public int getId() {
         return id;

@@ -1,14 +1,21 @@
 public class Contrato {
 
     private int id;
-    private int id_plano;
+    private Plano id_plano;
     private String termos;
     private String data_inicio;
     private String data_fim;
 
-    public Contrato(int id, int id_plano, String termos, String data_inicio, String data_fim) {
+    public Contrato(int id, Plano plano, String termos, String data_inicio, String data_fim) {
         this.id = id;
-        this.id_plano = id_plano;
+        this.id_plano = plano;
+        this.termos = termos;
+        this.data_inicio = data_inicio;
+        this.data_fim = data_fim;
+    }
+
+    public Contrato( Plano plano, String termos, String data_inicio, String data_fim) {
+        this.id_plano = plano;
         this.termos = termos;
         this.data_inicio = data_inicio;
         this.data_fim = data_fim;
@@ -22,11 +29,11 @@ public class Contrato {
         this.id = id;
     }
 
-    public int getId_plano() {
+    public Plano getId_plano() {
         return id_plano;
     }
 
-    public void setId_plano(int id_plano) {
+    public void setId_plano(Plano id_plano) {
         this.id_plano = id_plano;
     }
 
@@ -57,7 +64,7 @@ public class Contrato {
     public String toString() {
 
         return "\nID do contrato: " + getId() +
-               "\nID do plano: " + getId_plano() +
+               "\nID do plano: " + id_plano.getId() +
                "\nTermos do contrato: " + getTermos() +
                "\nData de início: " + getData_inicio() +
                "\nData de fim: " + getData_fim();

@@ -96,7 +96,6 @@ public class PlanoCRUD {
             }
 
         } catch (SQLException e) {
-            System.out.println("Erro ao atualizar plano!");
             e.printStackTrace();
         }
     }

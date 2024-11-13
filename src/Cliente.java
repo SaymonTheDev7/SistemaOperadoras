@@ -14,6 +14,19 @@ public class Cliente {
         this.id_plano = id_plano;
     }
 
+    public Cliente( String nome, String email, String telefone, int id_plano) {
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.id_plano = id_plano;
+    }
+
+    public Cliente( String nome, String email, String telefone) {
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+    }
+
     public int getId() {
         return id;
     }
